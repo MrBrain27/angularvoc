@@ -1,0 +1,6 @@
+  <h3>Добавить слово</h3>
+  <input placeholder="Слово" ng-model="$parent.newword">
+  <input placeholder="Значение" ng-model="$parent.newdescription">
+  <select ng-options="x for x in vocabs" ng-model="$parent.newvocab"></select>
+  <button ng-click="addword(words)">Добавить слово</button>
+

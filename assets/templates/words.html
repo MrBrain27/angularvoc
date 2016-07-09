@@ -1,0 +1,11 @@
+  <ul>
+    <li ng-repeat="word in words | filter:voc.message | orderBy:'word'">
+      <div>
+        <span>Слово </span><input ng-model="word.word">
+        <span>Значение </span><input ng-model="word.description">
+        <button ng-click="doneEditing(word)">Редактировать</button>
+        <button ng-click="removeword(word)">Удалить</button>
+      </div>
+    </li>
+  </ul>
+
